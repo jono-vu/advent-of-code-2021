@@ -1,4 +1,4 @@
-import { DAY2_INPUT } from "../inputs";
+import { DAY2_INPUT } from "../../inputs";
 
 function resolveMagnitude(input: string) {
   return Number(input.replace(/[^0-9]+/, ""));
@@ -25,3 +25,5 @@ function dive(input: Array<string>) {
 }
 
 console.log(dive(DAY2_INPUT)); // 1281977850 CORRECT
+
+export { dive };

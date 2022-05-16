@@ -1,10 +1,7 @@
-import { DAY1_INPUT } from "../inputs";
+import { DAY1_INPUT } from "../../inputs";
+import { arrayFrom } from "../utils";
 
 const WINDOW_SIZE = 3;
-
-function arrayFrom(length: number) {
-  return Array.from(Array(length - 1).keys());
-}
 
 function sonarSweep(input: Array<number>) {
   let counter = 0;
@@ -26,3 +23,5 @@ function sonarSweep(input: Array<number>) {
 }
 
 console.log(sonarSweep(DAY1_INPUT)); // 1737 CORRECT
+
+export { sonarSweep };

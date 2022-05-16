@@ -1,4 +1,4 @@
-import { DAY1_INPUT } from "../inputs";
+import { DAY1_INPUT } from "../../inputs";
 
 function sonarSweep(input: Array<number>) {
   let counter = 0;
@@ -13,3 +13,5 @@ function sonarSweep(input: Array<number>) {
 }
 
 console.log(sonarSweep(DAY1_INPUT)); // 1696 CORRECT
+
+export { sonarSweep };
