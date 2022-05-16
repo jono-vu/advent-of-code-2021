@@ -7,7 +7,7 @@ function sonarSweep(input: Array<number>) {
   let counter = 0;
 
   function windowSum(startIndex: number) {
-    return arrayFrom(WINDOW_SIZE).reduce(
+    return arrayFrom(WINDOW_SIZE - 1).reduce(
       (prev, currentIndex) => prev + input[startIndex + (currentIndex + 1)],
       input[startIndex]
     );

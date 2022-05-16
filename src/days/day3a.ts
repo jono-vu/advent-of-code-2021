@@ -37,14 +37,14 @@ function binaryDiagnostic(input: Array<string>) {
     .map((_, i) => {
       const binaryValues = input.map((binary) => binary[i]);
 
-      return resolveBinaries("MOST", binaryValues);
+      return resolveBinaries("LEAST", binaryValues);
     })
     .join("");
 
-  const result = parseInt(gammaRate, 2) * parseInt(epsilonRate, 2);
-  return result;
+  const powerConsumption = parseInt(gammaRate, 2) * parseInt(epsilonRate, 2);
+  return powerConsumption;
 }
 
-console.log(binaryDiagnostic(DAY3_INPUT));
+console.log(binaryDiagnostic(DAY3_INPUT)); // 2954600 CORRECT
 
 export { binaryDiagnostic };
