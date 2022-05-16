@@ -1,4 +1,4 @@
-import { DAY2_INPUT } from "../../inputs";
+import { DAY2_INPUT, DAY2_INPUT_EXAMPLE } from "../../inputs";
 
 function resolveDistance(input: string) {
   return Number(input.replace(/[^0-9]+/, ""));
@@ -20,9 +20,11 @@ function dive(input: Array<string>) {
   input.forEach((item) => moveSubmarine(item));
 
   const result = position.x * position.y;
+
   return result;
 }
 
+console.log(dive(DAY2_INPUT_EXAMPLE)); // 150
 console.log(dive(DAY2_INPUT)); // 1714950 CORRECT
 
 export { dive };

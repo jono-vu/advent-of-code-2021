@@ -1,4 +1,4 @@
-import { DAY1_INPUT } from "../../inputs";
+import { DAY1_INPUT, DAY1_INPUT_EXAMPLE } from "../../inputs";
 import { arrayFrom } from "../utils";
 
 const WINDOW_SIZE = 3;
@@ -22,6 +22,7 @@ function sonarSweep(input: Array<number>) {
   return counter;
 }
 
+console.log(sonarSweep(DAY1_INPUT_EXAMPLE)); // 5
 console.log(sonarSweep(DAY1_INPUT)); // 1737 CORRECT
 
 export { sonarSweep };

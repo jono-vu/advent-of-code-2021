@@ -1000,3 +1000,12 @@ export const DAY2_INPUT = [
   "forward 8",
   "forward 3",
 ];
+
+export const DAY2_INPUT_EXAMPLE = [
+  "forward 5",
+  "down 5",
+  "forward 8",
+  "up 3",
+  "down 8",
+  "forward 2",
+];
