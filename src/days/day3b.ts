@@ -58,6 +58,6 @@ function binaryDiagnostic(input: Array<string>) {
 }
 
 console.log(binaryDiagnostic(DAY3_INPUT_EXAMPLE)); // 230
-console.log(binaryDiagnostic(DAY3_INPUT)); // 1662846
+console.log(binaryDiagnostic(DAY3_INPUT)); // 1662846 CORRECT
 
 export { binaryDiagnostic };
