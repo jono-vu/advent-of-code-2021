@@ -1,4 +1,4 @@
-import { DAY4_INPUT, DAY4_INPUT_EXAMPLE } from "../../inputs";
+import { DAY4_INPUT } from "../../inputs";
 
 type Cell = { marked: boolean; value: number };
 type Row<T> = Array<T>;
